@@ -2,6 +2,8 @@
 A Chrome and Edge extension that pauses a video while you type notes and plays it again when you stop. It works on any site that uses an HTML5 video. The notes can be in a different tab or window from the video, so it fits a split-screen setup with your notes on one side and the course on the other.
 
 ## How it works
+
+https://github.com/user-attachments/assets/4c79c2a0-eba9-4ebc-b48c-1fec68573f96
 The extension has three parts. A content script runs on every page. When you type in a text field, it tells the background script that you are typing. The background script forwards the message to all open tabs, and the tab with a playing video pauses it. When you stop typing for 2 seconds, the same path sends an idle message, and the video rewinds 2 seconds and plays.
 The extension only resumes a video that it paused itself. If you pause a video by hand, typing will not start it again.
 
